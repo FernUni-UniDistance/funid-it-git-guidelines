@@ -15,6 +15,7 @@ Department prefixes:
 - `edudl`
 - `mkt`
 - `fac-psy`
+
 Project part: choose a short, meaningful project name: 
 ### Examples
 - `funid-it-odoo-addons`
