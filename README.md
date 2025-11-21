@@ -16,7 +16,7 @@ Department prefixes:
 - `mkt`
 - `fac-psy`
 
-Project part: choose a short, meaningful project name: 
+Project name: Choose a short, meaningful project name.
 ### Examples
 - `funid-it-odoo-addons`
 - `funid-mkt-web-typo3`
