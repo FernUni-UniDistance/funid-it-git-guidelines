@@ -3,7 +3,7 @@
 This repo contains our naming rules and best practices for repositories at UniDistance.
 Please check these guidelines before creating a new repository.
 
-## 1. Repository Naming Structure
+## 1. Repository Naming Convention
 Use lowercase, hyphens, and a clear scope.
 ### General pattern
 ```
