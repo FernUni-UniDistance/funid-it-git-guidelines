@@ -6,13 +6,15 @@ Please check these guidelines before creating a new repository.
 ## 1. Repository Naming Structure
 Use lowercase, hyphens, and a clear scope.
 ### General pattern
+```
 funid-<department>-<project>[-<specification>]
+```
 Department prefixes:
-- it,
-- it-odoo,
-- edudl,
-- mkt,
-- fac-psy
+- `it`
+- `it-odoo`
+- `edudl`
+- `mkt`
+- `fac-psy`
 Project part: choose a short, meaningful project name: 
 ### Examples
 - `funid-it-odoo-addons`
@@ -58,18 +60,18 @@ feature/[<ticketnr>-]<short-description>
 
 ## 4. Commit messages
 ### Types
-- feat: new feature
-- fix: bug fix
-- docs: documentation changes
-- style: formatting only
-- refactor: code restructuring (no behavior changes)
-- test: test-related changes
-- chore: maintenance tasks
+- `feat:` new feature
+- `fix:` bug fix
+- `docs:` documentation changes
+- `style:` formatting only
+- `refactor:` code restructuring (no behavior changes)
+- `test:` test-related changes
+- `chore:` maintenance tasks
 ### Examples
-- docs: improve markdown formatting
-- feat: add gpu monitoring script
-- fix: correct ssh permissions
-- chore: update dependencies
+- `docs: improve markdown formatting`
+- `feat: add gpu monitoring script`
+- `fix: correct ssh permissions`
+- `chore: update dependencies`
 ### Best Practices
 - Use imperative form ("add" not "added")
 - Keep the subject under 50 chars
