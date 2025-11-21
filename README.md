@@ -55,9 +55,9 @@ pip install -r requirements.txt
 ### Additional branches
 These are branches you actually work on.
 Use one of the follow prefixes.
-release/<description>
-bugfix/[<ticketnr>-]<short-description>
-feature/[<ticketnr>-]<short-description>
+- `release/<description>`
+- `bugfix/[<ticketnr>-]<short-description>`
+- `feature/[<ticketnr>-]<short-description>`
 
 ## 4. Commit messages
 ### Types
