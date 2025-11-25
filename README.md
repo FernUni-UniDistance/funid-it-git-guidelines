@@ -19,7 +19,7 @@ Department prefixes:
 Project name: Choose a short, meaningful project name.
 ### Examples
 - `funid-it-odoo-addons`
-- `funid-mkt-web-typo3`
+- `funid-it-web-typo3`
 - `funid-fac-psy-translation-labjs`
 
 ## 2. Repository Creation Workflow
@@ -46,7 +46,14 @@ pip install -r requirements.txt
 8. Set the correct team permissions on GitHub.
 9. Apply branch protection rules, e.g. require at least one reviewer before merging.
 
-## 3. Branching strategy
+## 3. Repository access
+Repository access is managed through GitHub teams within the UniDistance organization.
+	•	UniDistance members should receive access via their team, not as direct collaborators.
+	•	Direct access is reserved only for external collaborators who are not part of the organization.
+This ensures consistent rights management and easier onboarding/offboarding.
+
+
+## 4. Branching strategy
 ### Main Branch
 - `main` – always stable, deployable, production-ready
 - No direct commits to `main` are allowed.
@@ -55,11 +62,11 @@ pip install -r requirements.txt
 ### Additional branches
 These are branches you actually work on.
 Use one of the follow prefixes.
-release/<description>
-bugfix/[<ticketnr>-]<short-description>
-feature/[<ticketnr>-]<short-description>
+- `release/<description>`
+- `bugfix/[<ticketnr>-]<short-description>`
+- `feature/[<ticketnr>-]<short-description>`
 
-## 4. Commit messages
+## 5. Commit messages
 ### Types
 - `feat:` new feature
 - `fix:` bug fix
