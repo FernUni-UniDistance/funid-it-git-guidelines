@@ -48,10 +48,9 @@ pip install -r requirements.txt
 
 ## 3. Repository access
 Repository access is managed through GitHub teams within the UniDistance organization.
-	•	UniDistance members should receive access via their team, not as direct collaborators.
-	•	Direct access is reserved only for external collaborators who are not part of the organization.
+- UniDistance members should receive access via their team, not as direct collaborators.
+- Direct access is reserved only for external collaborators who are not part of the organization.
 This ensures consistent rights management and easier onboarding/offboarding.
-
 
 ## 4. Branching strategy
 ### Main Branch
@@ -84,3 +83,31 @@ Use one of the follow prefixes.
 - Use imperative form ("add" not "added")
 - Keep the subject under 50 chars
 - Use the body for context if needed
+
+## 6. Secrets and sensitive data
+**Do not commit secrets to Git repositories.**
+Secrets include, but are not limited to:
+- Private keys (`.pem`, `.key`, `.p12`, `.pfx`)
+- API keys and tokens
+- Passwords or credentials
+- Certificates containing private keys
+- Environment files (`.env`) with sensitive values
+### Rules
+- **Never commit private keys** (e.g. files containing  
+  `BEGIN PRIVATE KEY`, `BEGIN RSA PRIVATE KEY`, `BEGIN EC PRIVATE KEY`).
+- Only **public certificates** (`BEGIN CERTIFICATE`) or **public keys**
+  may be committed.
+- Secrets must be stored using:
+  - Environment variables
+  - A secret manager (GitHub Secrets, Vault, etc.)
+  - Secure deployment tooling
+### If a secret was committed by mistake
+1. **Remove it immediately** from the repository.
+2. **Rotate / regenerate** the compromised secret.
+3. Rewrite Git history if necessary.
+4. Notify the team if the secret may have been exposed.
+### Best practices
+- Add sensitive file patterns to `.gitignore`
+- Use example files (e.g. `.env.example`) instead of real secrets
+- Review commits carefully before pushing
+
