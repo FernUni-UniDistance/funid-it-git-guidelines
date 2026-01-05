@@ -19,7 +19,7 @@ Department prefixes:
 Project name: Choose a short, meaningful project name.
 ### Examples
 - `funid-it-odoo-addons`
-- `funid-mkt-web-typo3`
+- `funid-it-web-typo3`
 - `funid-fac-psy-translation-labjs`
 
 ## 2. Repository Creation Workflow
@@ -65,7 +65,7 @@ Use one of the follow prefixes.
 - `bugfix/[<ticketnr>-]<short-description>`
 - `feature/[<ticketnr>-]<short-description>`
 
-## 4. Commit messages
+## 5. Commit messages
 ### Types
 - `feat:` new feature
 - `fix:` bug fix
